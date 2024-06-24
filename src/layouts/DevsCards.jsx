@@ -8,9 +8,9 @@ const ReviewCard = (props) => {
     <div className=" flex flex-col w-full lg:w-2/6 bg-white p-3 rounded-lg gap-5">
       <div className=" flex flex-row items-center lg:justify-start justify-center">
         <div className="w-1/4">
-          <img className=" rounded-full" src={props.img} alt="img" />
+          <img className=" rounded-full w-16" src={props.img} alt="img" />
         </div>
-        <div className=" mx-3">
+        <div className="">
           <h2 className=" font-semibold text-lg">{props.title}</h2>
           <div className=" flex">
             <BsStarFill className=" text-brightColor" />
@@ -21,13 +21,11 @@ const ReviewCard = (props) => {
           </div>
         </div>
         <span className=" ml-16">
-          <FaQuoteRight className=" text-backgroundColor" size={42} />
+          <FaQuoteRight className=" text-backgroundColor" size={40} />
         </span>
       </div>
       <p className="text-textColor">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-        consequatur fuga suscipit perspiciatis totam. Eos esse nisi omnis dicta,
-        aperiam distinctio fuga ipsam rerum rem.
+        {props.desc}
       </p>
     </div>
   );

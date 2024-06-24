@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img/about.jpg";
+import img from "../assets/img/about.svg";
 import Button from "../layouts/Button";
 
 const About = () => {
@@ -13,18 +13,13 @@ const About = () => {
         </div>
         <div className=" w-full lg:w-2/4 p-4 space-y-3">
           <h2 className=" font-semibold text-3xl ">
-            What Makes Our Coffee Special?
+            Special of Myth Weaver
           </h2>
           <p className="text-textColor">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            quaerat quia quasi beatae et iste, tempora voluptatum corporis sit
-            pariatur eaque exercitationem, doloribus eum optio nobis cum?
-            Quidem, dolor atque.
+          Myth Weaver is an AI story generator. In a few seconds, you will get your own story based on the keywords and prompts you enter.
           </p>
           <p className="text-textColor">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut
-            minima perspiciatis doloribus quod repellendus molestiae rerum!
-            Enim, vero natus.
+          It is very easy to do, and we have created a simple tool to help you create your own story. This tool is very useful and will give you a story of just 60 words. You can quickly generate engaging content with minimal effort.
           </p>
 
           <Button title="Learn More" />

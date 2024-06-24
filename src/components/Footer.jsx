@@ -7,7 +7,7 @@ const Footer = () => {
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-4">Myth Weaver</h1>
           <p className=" text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste praesentium a incidunt reiciendis dolorum corporis velit est dignissimos consectetur ullam!
+          Myth Weaver is an AI story generator. In a few seconds, you will get your own story based on the keywords and prompts you enter. It is very easy to use, and we have created a simple tool to help you create your own story. This tool is very useful and will give you a story of just 60 words.
           </p>
         </div>
         <div>
@@ -32,27 +32,21 @@ const Footer = () => {
           <nav className=" flex flex-col gap-2">
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="https://github.com/shweta1817"
             >
               Shweta Bandawane
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="https://github.com/mrravipandee"
             >
               Ravi Pandey
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="https://github.com/JejurkarYash"
             >
               Yash Jejurkar
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Nitesh Ray
             </a>
           </nav>
         </div>
