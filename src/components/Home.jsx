@@ -29,10 +29,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
+      <div className="mx-4">
         <iframe
           ref={iframeRef}
-          className="rounded-md h-[18rem] w-[34rem] lg:h-[20rem] lg:w-[38rem]"
+          className="rounded-md h-[18rem] w-[34rem] lg:h-[20rem] lg:w-[38rem] mx-4"
           width="560"
           height="315"
           title="YouTube video player"

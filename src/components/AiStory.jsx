@@ -6,9 +6,13 @@ import { WiStars } from "react-icons/wi";
 import Button from "../layouts/Button";
 
 const AiStory = () => {
+  const [prompts, setPrompts] = useState("");
   const [story, setStory] = useState(false);
 
-  const handleStory = () => {};
+  const handleStory = () => {
+    console.log("clicked");
+    setStory(true); // This should change the state from false to true
+  };
 
   return (
     <div>
@@ -25,6 +29,8 @@ const AiStory = () => {
             <textarea
               className="w-[25rem] m-4 h-[8rem] p-2 bg-gray-100 rounded-lg border border-gray-300 focus:outline-none"
               placeholder="Prompt should be in keywords. Enter 4 to 6 words to generate the best AI story."
+              value={prompts}
+              onChange={(e) => setPrompts(e.target.value)}
             ></textarea>
             <div className="">
               <Button title="Generate" onClick={handleStory} />
@@ -32,8 +38,8 @@ const AiStory = () => {
           </div>
         </div>
       </div>
-      <Storys />
-      <hr class="border-1.5 border-gray-300" />
+      {story && <Storys prompts={prompts} />}
+      <hr className="border-1.5 border-gray-300" />
       <Footer />
     </div>
   );
