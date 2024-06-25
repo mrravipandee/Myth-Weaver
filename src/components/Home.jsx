@@ -1,16 +1,10 @@
 import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import Button from "../layouts/Button";
 import PlayButton from "../layouts/PlayButton";
 
 const Home = () => {
   const iframeRef = useRef(null);
-  const navigate = useNavigate();
-
-  const handleLink = () => {
-    navigate("/ai-story-generator");
-  };
-
+  
   const handlePlayDemo = () => {
     const iframe = iframeRef.current;
     const src = "https://www.youtube.com/embed/q8DvhsrqNWM?autoplay=1";

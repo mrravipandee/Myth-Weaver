@@ -12,9 +12,9 @@ const Review = () => {
       </h1>
 
       <div className=" flex flex-col lg:flex-row gap-5 justify-center py-4 my-8">
-        <Devs img={img1} title="Ravi" desc="Hello! I'm Ravi Pandey, and I contributed to this project. I used React and Tailwind, and we achieved the best UI through Shweta, who made excellent color selections to get this amazing output." />
-        <Devs img={img2} title="Shweta" desc="I'm Shweta Bandawane. I suggested the UI and identified the functions that would help make this product. I'm not a UI/UX designer; I just try helped her to achieve the best outcome." />
-        <Devs img={img3} title="Yash" desc="I am Yash Jejurkar. I am learning the MERN stack and needed help with this project. I gave it my best effort and wrote a few lines of code to integrate AI into the project." />
+        <Devs img={img1} title="Ravi" username="@mrravipandee" desc="Hello! I'm Ravi Pandey, and I contributed to this project. I used React and Tailwind, and we achieved the best UI through Shweta, who made excellent color selections to get this amazing output." />
+        <Devs img={img2} title="Shweta" username="@shweta1817" desc="I'm Shweta Bandawane. I suggested the UI and identified the functions that would help make this product. I'm not a UI/UX designer; I just try helped her to achieve the best outcome." />
+        <Devs img={img3} title="Yash" username="@jejurkaryash" desc="I am Yash Jejurkar. I am learning the MERN stack and needed help with this project. I gave it my best effort and wrote a few lines of code to integrate AI into the project." />
       </div>
     </div>
   );
