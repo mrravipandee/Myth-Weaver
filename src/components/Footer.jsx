@@ -57,7 +57,7 @@ const Footer = () => {
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              contact@forange.inc
+              imravipanday@gmail.com
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
@@ -67,7 +67,7 @@ const Footer = () => {
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="https://mrravipandee.bio.link/"
             >
               Social media
             </a>

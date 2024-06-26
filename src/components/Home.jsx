@@ -36,7 +36,7 @@ const Home = () => {
           width="560"
           height="315"
           title="YouTube video player"
-          src="https://www.youtube.com/embed/q8DvhsrqNWM"
+          src="https://www.youtube.com/embed/CTRsnBVgGgk"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
