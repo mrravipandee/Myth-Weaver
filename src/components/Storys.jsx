@@ -22,7 +22,7 @@ const Storys = ({ prompts }) => {
       if (!apiKey) {
         throw new Error("API key is missing. Please set VITE_API_KEY in your environment variables.");
       }
-
+  
       const stories = [];
       for (let i = 0; i < 5; i++) {
         const response = await axios.post(
@@ -36,9 +36,9 @@ const Storys = ({ prompts }) => {
             }
           }
         );
-
-        if (response.data && response.data.candidates) {
-          const candidate = response.data.candidates[0]; // Assuming API always returns at least one candidate
+  
+        if (response.data && response.data.candidates && response.data.candidates[0] && response.data.candidates[0].content && response.data.candidates[0].content.parts) {
+          const candidate = response.data.candidates[0];
           stories.push({
             id: i + 1,
             title: `Generated Story ${i + 1}`,
@@ -55,7 +55,7 @@ const Storys = ({ prompts }) => {
           });
         }
       }
-
+  
       setEntries(stories);
     } catch (error) {
       console.error("Error generating stories:", error);
