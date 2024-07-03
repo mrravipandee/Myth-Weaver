@@ -7,7 +7,7 @@ const Home = () => {
   
   const handlePlayDemo = () => {
     const iframe = iframeRef.current;
-    const src = "https://www.youtube.com/embed/q8DvhsrqNWM?autoplay=1";
+    const src = "https://www.youtube.com/embed/CTRsnBVgGgk?autoplay=1";
     iframe.src = src;
   };
 
@@ -21,7 +21,7 @@ const Home = () => {
           Just put the few words, related to that you will get a short story in 60 words.
         </p>
 
-        <div className="flex flex-row gap-6 w-screen justify-center lg:justify-start">
+        <div className="flex flex-row gap-6 w-full justify-center lg:justify-start">
           <a href="/ai-story-generator">
             <Button title="CREATE" />
           </a>
@@ -29,10 +29,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mx-4">
+      <div className="mx-4 w-full lg:w-auto">
         <iframe
           ref={iframeRef}
-          className="rounded-md h-[18rem] w-[34rem] lg:h-[20rem] lg:w-[38rem] mx-4"
+          className="rounded-md w-full h-[18rem] lg:h-[20rem] lg:w-[38rem]"
           width="560"
           height="315"
           title="YouTube video player"
